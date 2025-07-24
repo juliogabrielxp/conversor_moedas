@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="app.js"> </script>
+</head>
+<body>
+    <main>
+        <form name="form" id="form" method="post" action="process.php">
+            <input type="number" name="value" id="value">
+            <select value="USD" name="amount" id="amount">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <option value="CNY">CNY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="HKD">HKD</option>
+                <option value="BRL">BRL</option>
+            </select>
+            <input disabled type="number" id="convertedAmount" name="convertedAmount">
+            <select value="" name="convertedAmount" id="convertedAmount">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+                <option value="CNY">CNY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="HKD">HKD</option>
+                <option value="BRL">BRL</option>
+            </select>
+            <button sid="calculate" >
+                Calculate
+            </button>
+        </form>
+    </main>
+</body>
+</html>
