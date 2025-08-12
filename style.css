@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {
+  background-color: #eaf5e6;
+  height: 100%;
+
+}
+
+main {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 50vw;
+}
+
+form {
+  flex: auto;
+
+}
+
+#currencyOrigin {
+  display: inline;
+}
+
+#valueLabel {
+  display: block;
+}
+
+#value {
+  display: inline;
+}
+
+#labelAmount,#labelconvertedAmount {
+  display: block;
+}
+
+#convertTo {
+  display: block;
+}
+
+#calculate {
+  display:block;
+}
+
+h1 {
+  display: block;
+}

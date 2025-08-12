@@ -1,22 +1,22 @@
-/*document.querySelector('#form').addEventListener('submit', function(e) {
+document.querySelector('#form').addEventListener('submit', function(e) {
 
-    e.preventDefault;
+    e.preventDefault();
 
-    const Form = new Form(this);
-    
+    const formData = new FormData(this);
+
     fetch('process.php', {
         method:'POST',
-        body:'Form'
+        body: formData
     })
     .then(res => res.json())
     .then(data => {
-        if(data.sucess) {
+        if(data.convertedAmount) {
 
-            document.querySelector('#newValue').innerHTML = data
+           document.querySelector('#convertedAmount').value = data.convertedAmount;
         } else {
 
-            document.querySelector('#newValue').innerHTML = 'Algo deu errado'
+            console.log('Algo deu errado')
         }
 })
 
-}) */
+})
