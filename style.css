@@ -1,47 +1,117 @@
 @charset "utf-8";
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 body {
-  background-color: #eaf5e6;
-  height: 100%;
+  background-color: 	#5BA065;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 main {
   display: flex;
-  background-color: #ffffff;
-  border-radius: 4px;
-  width: 50vw;
+  background-color: #F7F4F4;
+  border-radius: 12px;
+  width: 350px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  border:1px solid #2e7d32;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding: 10px;
 }
 
-form {
-  flex: auto;
 
+#logo {
+  display:block;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #2e7d32;
 }
 
-#currencyOrigin {
-  display: inline;
-}
-
-#valueLabel {
+img {
   display: block;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 500;
+  color: #333333;
+  display: block;
+  text-align: left;
+  margin: 4px 0px;
+}
+
+input {
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  padding: 5px;
+  border:0.2px solid #2e7d3234;
+  border-radius: 4px;
+
+}
+
+input::placeholder {
+  text-align: right;
+  font-size: 16px;
+}
+
+select#currencyOrigin {
+  background-color: #fff;
+  border: 0.2px solid #2e7d3234;
+  display: inline;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+select#convertTo {
+  width: 100%;
+  padding: 5px;
+  border: 0.2px solid #2e7d3234;
+  border-radius: 4px;
+  background-color: #fff;
 }
 
 #value {
   display: inline;
 }
 
-#labelAmount,#labelconvertedAmount {
-  display: block;
-}
-
 #convertTo {
   display: block;
 }
 
-#calculate {
+button#calculate {
+  font-size: 16px;
+  width: 100%;
   display:block;
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 h1 {
   display: block;
+  color:#2e7d32;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+input#convertedAmount {
+  width: 95%;
+  margin-bottom: 10px;
 }

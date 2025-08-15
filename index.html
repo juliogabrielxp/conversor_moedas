@@ -6,45 +6,42 @@
     <title>Conversor de moedas</title>
     <script defer src="app.js"> </script>
     <link rel="stylesheet" href="style.css">
-</head>
 <body>
     <main>
         <form name="form" id="form" method="post" action="process.php">
-            <div></div>
-            <h1>Conversor de moedas</h1>
+            <img width="150px" height="150px" src="logo.png" alt="">
+            <h1>Conversor de moedas <i class="fas fa-coins"></i></i></h1>
             <label id="valueLabel" for="value">Valor:</label>
             <select name="currencyOrigin" id="currencyOrigin">
-                <option value="">Selecione uma opção --</option>
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="JPY">JPY</option>
-                <option value="GBP">GBP</option>
-                <option value="CNY">CNY</option>
-                <option value="AUD">AUD</option>
-                <option value="CAD">CAD</option>
-                <option value="CHF">CHF</option>
-                <option value="HKD">HKD</option>
-                <option value="BRL">BRL</option>
+                <option value="BRL">R$ (BRL)</option>
+                <option value="EUR">€ (EUR)</option>
+                <option value="USD">$ (USD)</option>
+                <option value="JPY">¥ (JPY)</option>
+                <option value="GBP">£ (GBP)</option>
+                <option value="CNY">¥ (CNY)</option>
+                <option value="AUD">$ (AUD)</option>
+                <option value="CAD">$ (CAD)</option>
+                <option value="CHF">₣ (CHF)</option>
+                <option value="HKD">$ (HKD)</option>
             </select>
-            <input type="number" name="value" id="value">
+            <input placeholder="0,00" type="number" name="value" id="value">
             <label id="labelAmount" for="amount">Converter para: </label>
             <select name="convertTo" id="convertTo">
-                <option value="">Selecione uma opção --</option>
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="JPY">JPY</option>
-                <option value="GBP">GBP</option>
-                <option value="CNY">CNY</option>
-                <option value="AUD">AUD</option>
-                <option value="CAD">CAD</option>
-                <option value="CHF">CHF</option>
-                <option value="HKD">HKD</option>
-                <option value="BRL">BRL</option>
+                <option value="USD">$ Dólar Americano (USD)</option>
+                <option value="EUR">€ Euro (EUR)</option>
+                <option value="JPY">¥ Iene Japonês (JPY)</option>
+                <option value="GBP">£ Libra Esterlina (GBP)</option>
+                <option value="CNY">¥ Yuan Chinês (CNY)</option>
+                <option value="AUD">$ Dólar Australiano (AUD)</option>
+                <option value="CAD">$ Dólar Canadense (CAD)</option>
+                <option value="CHF">₣ Franco Suíço (CHF)</option>
+                <option value="HKD">$ Dólar de Hong Kong (HKD)</option>
+                <option value="BRL">R$ Real Brasileiro (BRL)</option>
             </select>
             <button id="calculate" type="submit">
                 Converter
             </button>
-            <label id="labelconvertedAmount" for="convertedAmount">Convertído:</label>
+            <label id="labelconvertedAmount" for="convertedAmount">Valor convertído:</label>
             <input readonly id="convertedAmount" name="convertedAmount">
         </form>
     </main>
