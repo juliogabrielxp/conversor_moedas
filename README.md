@@ -33,7 +33,7 @@ Permite converter valores entre diferentes moedas em tempo real utilizando a API
 
 - Acesse pelo navegador:
 
-- http://localhost/conversor-moedas
+- http://localhost/conversor_moedas
 
 ## Licença
 
